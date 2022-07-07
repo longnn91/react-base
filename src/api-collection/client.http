@@ -1,0 +1,6 @@
+@baseUrl = https://5bd6bf7aa6871d00133233e5.mockapi.io/
+
+#Comments
+
+# @name getCommentDetail
+GET {{baseUrl}}/cities?page=1&limit=2
