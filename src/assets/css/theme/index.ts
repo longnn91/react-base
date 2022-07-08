@@ -1,3 +1,4 @@
+import { blue, grey } from "@mui/material/colors";
 import { createTheme, ThemeOptions } from "@mui/material/styles";
 
 // assets
@@ -44,15 +45,16 @@ export const theme = () => {
 
   console.log("shenlong: ");
 
-  const themeOptions: ThemeOptions = {
+  const themeOptions = {
     palette: {
       primary: {
-        main: "darkblue",
+        main: grey[500],
       },
       secondary: {
         main: Colors.secondary,
       },
     },
+    myButton: {},
     components: {
       MuiButton: {
         defaultProps: {

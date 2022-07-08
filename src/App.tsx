@@ -4,16 +4,9 @@ import { cityApi } from "./api/cityApi";
 import Appbar from "./components/AppBar";
 import MaterialExam from "./MaterialExam";
 import LandingPage from "./views/LandingPage";
-
-const useStyles = makeStyles({
-  button: {
-    color: "white",
-    backgroundColor: "black",
-  },
-});
+import LayoutAdmin from "./views/LayoutAdmin";
 
 function App() {
-  const classes = useStyles();
   useEffect(() => {
     console.log("join effect");
     cityApi.getAll({ page: 1, limit: 2 }).then((response) => {
@@ -23,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Appbar />
+      <LayoutAdmin />
     </div>
   );
 }
